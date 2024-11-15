@@ -1,18 +1,18 @@
-Кластер серверів точного часу pool.ntp.org надає наступні домени для України:
-0.ua.pool.ntp.org
-1.ua.pool.ntp.org
-2.ua.pool.ntp.org
-3.ua.pool.ntp.org
-4.ua.pool.ntp.org
-Для кожного домена, використовуючи API сервісу https://ip-api.com/, перевірити, що
-сервер дійсно знаходиться в Україні ("country": "Ukraine").
-Посилання на документацію https://ip-api.com/docs/api:json
-Регламент:
-- завдання повинно бути виконане у вигляді автоматизованих тестів
-- мова програмування java або kotlin
-- система збірки maven або gradle
-- бібліотека для тестування junit або testng
-  Додатково як бонус (за можливості):
-- інтегрувати будь-який report tool
-- багатопоточне виконання тестів
-- запакувати в docker контейнер
+# Project Setup and Execution
+
+## Prerequisites
+- **Maven** (for building and running tests)
+- **Java** (JDK 17)
+- **Allure** (for generating reports)
+
+## Running Tests
+
+1. **Run Tests:**
+
+   ```bash
+   mvn clean test
+   
+2. **Run Report:**
+
+   ```bash
+   mvn allure:serve
